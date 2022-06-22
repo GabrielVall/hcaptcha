@@ -13,7 +13,7 @@ $(document).on('click', '#login_btn', function() {
         capcha: $('[name="h-captcha-response"]').val()
     };
     $.ajax({
-        url: 'login.php',
+        url: 'php/login.php',
         type: 'POST',
         data: data,
         success: function(data) {
