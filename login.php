@@ -11,8 +11,10 @@
     $response = curl_exec($ch);
     $responseData = json_decode($response);
     if($responseData->success) {
+        // Si el captcha fue completado
         echo 'Verificacion completada correctamente';
     } else {
+        // En caso de no haber completado el captcha
         echo 'Error de verificación de robot, por favor intente de nuevo.';
     }
 ?>
