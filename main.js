@@ -1,3 +1,7 @@
+function yourFunction () {
+    console.log('hCaptcha is ready.');
+    var widgetID = hcaptcha.render('h-captcha', { sitekey: 'a557fbdd-c963-4d14-81b2-0445ae17e7f5' });
+};
 window.onload = function() {
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
