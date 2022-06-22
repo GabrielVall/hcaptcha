@@ -1,5 +1,4 @@
 <?php
-if ( isset($_POST['submit']) ) {
     $data = array(
         'secret' => "0x65844e4505D7683D505BC7E3bc13C0f283A467F8",
         'response' => $_POST['capcha']
@@ -16,5 +15,4 @@ if ( isset($_POST['submit']) ) {
     } else {
         echo 'Error de verificación de robot, por favor intente de nuevo.';
     }
-}
 ?>
