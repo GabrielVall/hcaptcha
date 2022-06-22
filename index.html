@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login captcha</title>
     <link rel="stylesheet" href="estilos.css">
-    <script src="main.js"></script>
+    <script src="main.js?v"></script>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src='https://js.hcaptcha.com/1/api.js?onload=yourFunction&render=explicit' async defer></script>
+    <script src='https://js.hcaptcha.com/1/api.js?render=explicit' async defer></script>
     <!-- Jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -41,7 +41,7 @@
                 <span>o usa tu cuenta</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <div class="h-captcha" data-sitekey="a557fbdd-c963-4d14-81b2-0445ae17e7f5"></div>
+                <div id="h-captcha"></div>
                 <a href="#">Olvidaste tu contraseña?</a>
                 <button id="login_btn">Acceder</button>
             </div>
