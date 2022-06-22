@@ -7,4 +7,4 @@ Este ejemplo solo incluye la validación de haber completado el captcha
 
 ## Exepciones
 
-Este proyecto **no es compatible** en un host local
++ Este proyecto **no es compatible** en un host local
