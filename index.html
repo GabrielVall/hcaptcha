@@ -9,6 +9,9 @@
     <script src="main.js"></script>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container" id="container">
@@ -28,7 +31,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <div class="form">
                 <h1>Inicia sesión</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -38,9 +41,10 @@
                 <span>o usa tu cuenta</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
+                <div class="h-captcha" data-sitekey="a557fbdd-c963-4d14-81b2-0445ae17e7f5"></div>
                 <a href="#">Olvidaste tu contraseña?</a>
-                <button>Registrate</button>
-            </form>
+                <button id="login_btn">Acceder</button>
+            </div>
         </div>
         <div class="overlay-container">
             <div class="overlay">
