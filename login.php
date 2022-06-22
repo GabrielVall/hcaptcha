@@ -2,7 +2,7 @@
 if ( isset($_POST['submit']) ) {
     $data = array(
         'secret' => "0x65844e4505D7683D505BC7E3bc13C0f283A467F8",
-        'response' => $_POST['h-captcha-response']
+        'response' => $_POST['capcha']
     );
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, "https://hcaptcha.com/siteverify");
